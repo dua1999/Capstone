@@ -1,9 +1,9 @@
-import React from 'react'
-import {skills} from '../../data/constants'
-import {Container, Wrapper, Title, Desc, SkillsContainer, Skill, SkillTitle, SkillList, SkillItem, SkillImage} from './SkillsStyle'
+import React from 'react';
+import {skills} from '../../data/constants';
+import {Container, Wrapper, Title, Desc, SkillsContainer, Skill, SkillTitle, SkillList, SkillItem, SkillImage} from './SkillsStyle';
 
 
-const Skills = () => {
+const SkillsClass = () => {
   return (
     <Container id="skills">
       <Wrapper>
@@ -31,4 +31,4 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default SkillsClass
