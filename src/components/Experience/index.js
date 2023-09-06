@@ -1,5 +1,3 @@
-
-import React from 'react'
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -22,7 +20,7 @@ const Experience = () => {
                 <TimelineSection>
                     <Timeline>
                         {experiences.map((experience,index) => (
-                            <TimelineItem>
+                            <TimelineItem key={index}>
                                 <TimelineSeparator>
                                     <TimelineDot variant="outlined" color="secondary" />
                                     {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#854CE6' }} />}
