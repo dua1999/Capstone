@@ -1,3 +1,9 @@
+import smeImage from '../utils/Images/sme.png';
+import shop from '../utils/Images/shop.png'
+import hangman from '../utils/Images/hangman.png'
+import weatherApp from '../utils/Images/weatherApp.jpg'
+
+
 export const Bio = {
     name: "Dua Alghassani",
     roles: [
@@ -165,77 +171,78 @@ export const Bio = {
    
   ];
   
-  export const education = [
-    {
-      id: 0,
-      img: "https://media.licdn.com/dms/image/C560BAQE4UC9Z_k3c7A/company-logo_200_200/0/1579422507409?e=1692230400&v=beta&t=HJssPsrwwkAJAsvFiVIYPdM8GzUuuSK5YlATKgLx3Bc",
-      school: "Kalinga Institute of Industrial Technology, Bhubaneswar",
-      date: "Oct 2021 - Sep 2025",
-      grade: "8.71 CGPA",
-      desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
-      degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
-    },
-    {
-      id: 1,
-      img: "https://methodistschool-dankuni.webs.com/NEW%20BADGE.jpg",
-      school: "Methodist School, Dankuni",
-      date: "Apr 2019 - Apr 2025",
-      grade: "88.2%",
-      desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
-      degree: "ISC(XII), Science with Computer",
-    },
-    {
-      id: 2,
-      img: "https://methodistschool-dankuni.webs.com/NEW%20BADGE.jpg",
-      school: "Methodist School, Dankuni",
-      date: "Apr 2017 - Apr 2019",
-      grade: "92.3%",
-      desc: "I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.",
-      degree: "ICSC(X), Science with Computer",
-    },
-  ];
+  // export const education = [
+  //   {
+  //     id: 0,
+  //     img: 
+  //     school: 
+  //     date: 
+  //     grade: 
+  //     desc: 
+  //     degree: 
+  //   
+  // ];
   
-  export const projects = [
+export const projects = [
+  {
+    id: 9,
+    title: "SME",
+    date: "Jun 2023",
+    description:
+      "This website is a reinvention of the small to medium enterprizes which shows the serveses available from the ministry",
+    image: smeImage,    
+    url: "https://sme.smart-developer.net/home-03/",
+
+    tags: [
+      "Bootstrap",
+      "CSS",
+      "HTML",
+      "Eslint",
+      
+    ],
+    category: "web app",
+    github: "https://github.com/rishavchanda/Trackify",
+    webapp: "https://trackify.duckdns.org",
+  },
+  {
+    id: 0,
+    title: "Shop",
+    date: "May 2023 - June 2023",
+    description:
+      "This is an E-shop that contains clothing, electronic and jewlery items to be purchased",
+    image:shop,
+    tags: ["Angular", "API", "HTTPClient",],
+    category: "web app",
+    github: "https://github.com/rishavchanda/Podstream",
+    url: "https://m11-seven.vercel.app/products",
    
-    {
-      id: 1,
-      title: "Vexa",
-      date: "Oct 2022 - Present",
-      description:
-        "Designed and developed the Vexa project, a project management app that helps users and teams stay organized and on track. Implemented key features such as task tracking, team collaboration, and time tracking to improve productivity and project outcomes and also invite team/project members. The plan is to add a community of users where they can find developers and other team members and chat system implementation.",
-      image:
-        "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
-      tags: [
-        "React Js",
-        "MongoDb",
-        "Node Js",
-        "Express Js",
-        "Redux",
-        "NodeMailer",
-      ],
-      category: "web app",
-      github: "https://github.com/rishavchanda/Project-Management-App",
-      webapp: "https://vexa-app.netlify.app/",
-    },
-    {
-      id: 3,
-      title: "Buckoid",
-      date: "Dec 2021 - Apr 2022",
-      description:
-        "App Is Currently In Playstore 100+ Downloads. This Project proposes an “Expense Tracking App”. Keep track of your personal expenses and compare them to your monthly income with the budget planner. It has Google Drive Cloud API for Backup of User Room Database. Made with Kotlin in MVVM Architecture & Live Data.",
-      image:
-        "https://camo.githubusercontent.com/fbf405040ae86b5d4a40f24e4ac034982cb8c0e2d850560ba64527997b258be8/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f6c6f67696e2d65613565322e61707073706f742e636f6d2f6f2f4255434b4f49442532302831292e706e673f616c743d6d6564696126746f6b656e3d32653735376235372d323964372d346263612d613562322d653164346538313432373435",
-      tags: ["Kotlin", "MVVM", "Room Database", "Google Drive Cloud API"],
-      category: "android app",
-      github: "https://github.com/rishavchanda/Buckoid-Android-App",
-      webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
-    },
-  ];
-  
-  export const TimeLineData = [
-    { year: 2017, text: "Started my journey" },
-    { year: 2018, text: "Worked as a freelance developer" },
-    { year: 2019, text: "Founded JavaScript Mastery" },
-    { year: 2020, text: "Shared my projects with the world" },
-    { year: 2021, text: "Started my own platform" },
-  ];
+  },
+  {
+    id: 1,
+    title: "Hangman Game",
+    date: "March 2023",
+    description:
+      "The Hange man game has different categries to choose from and you have limited chances to firnd the correct word related to the category",
+    image:hangman,
+    tags: [
+      "HTML",
+      "JavaScript",
+      "CSS",
+    ],
+    category: "web app",
+    github: "https://github.com/rishavchanda/Project-Management-App",
+    url: "https://hangman-ixnq.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "Weather App",
+    date: "Jul 2021",
+    description:
+      "A simple weather app that is connected to real-time weather",
+    image:weatherApp,
+    tags: ["Android Studio", "Kotlin", "GooglAuth", "XML","Java"],
+    category: "android app",
+    github: "https://github.com/rishavchanda/Breaking-Bad",
+    url: "https://github.com/dua1999/M13-Final_Weather_app",
+  },
+];
