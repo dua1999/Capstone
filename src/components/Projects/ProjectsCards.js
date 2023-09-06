@@ -1,6 +1,4 @@
-import React from 'react'
 import styled from 'styled-components'
-import project from '../../data/constants'
 
 
 const Button = styled.button`
@@ -45,6 +43,7 @@ const Image = styled.img`
     background-color: ${({ theme }) => theme.white};
     border-radius: 10px;
     box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
+    object-fit: contain;
 `
 
 const Tags = styled.div`
@@ -108,14 +107,20 @@ const Description = styled.div`
     text-overflow: ellipsis;
 `
 
+/* eslint-disable react/prop-types */
 
-const ProjectCards = ({project,setOpenModal}) => {
+
+const ProjectCards = ({project}) => {
+    const redirectToWebsite = () => {
+        // Use project.url to navigate to the specified URL
+        window.location.href = project.url;
+      };
     return (
-        <Card onClick={() => setOpenModal({state: true, project: project})}>
+        <Card onClick={() => ({state: true, project: project})}>
             <Image src={project.image}/>
             <Tags>
                 {project.tags?.map((tag, index) => (
-                <Tag>{tag}</Tag>
+                <Tag key={index}>{tag}</Tag>
                 ))}
             </Tags>
             <Details>
@@ -124,7 +129,7 @@ const ProjectCards = ({project,setOpenModal}) => {
                 <Description>{project.description}</Description>
             </Details>
             
-            {/* <Button>View Project</Button> */}
+            <Button onClick={redirectToWebsite}>View Project</Button>
         </Card>
     )
 }
